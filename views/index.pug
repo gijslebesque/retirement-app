@@ -62,13 +62,13 @@ html(lang="en")
       div.jumbotron
         div.container
          h1 We calculate your retirement fund!
-      div.form
-       +input("text","txtName","Name","What is your name?")
-       +input("text","txtName","Age","What is your age?")
-       +input("text","txtName","Start capital","What is your start capital?")
-       +input("text","txtName","Monthly savings","How much money will you set aside per month?")
-       +input("text","txtName","Retirement age","At what age do you plan to retire?")
-      +submit("Submit your information")
+      form(method="post")
+        +input("text","txtName", "Name","What is your name?", name="name")
+        +input("text","txtName","Age","What is your age?", name="age")
+        +input("text","txtName","Start capital","What is your start capital?", name="startcapital")
+        +input("text","txtName","Monthly savings","How much money will you set aside per month?", name="monthlyadd")
+        +input("text","txtName","Retirement age","At what age do you plan to retire?", name="retirementAge")
+        +submit("Submit your information")
       
     block scripts
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")

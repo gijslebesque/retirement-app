@@ -1,0 +1,16 @@
+{
+  "name": "dfdf",
+  "age": "",
+  "finances": {
+    "startcapital": "",
+    "monthlyadd": ""
+  },
+  "pension": {
+    "age": "",
+    "interest": {
+      "pessimistic": 1.02,
+      "average": 1.04,
+      "optimistic": 1.08
+    }
+  }
+}
